@@ -34,7 +34,7 @@ namespace TodoApi
 
       services.AddSwaggerGen(c =>
       {
-        c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
+        c.SwaggerDoc("v1", new OpenApiInfo { Title = "Grant接口文档", Version = "v1" });
       });
     }
 
@@ -47,7 +47,7 @@ namespace TodoApi
         app.UseSwagger();
         app.UseSwaggerUI(c =>
           {
-            c.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoApi v1");
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Grant接口文档 v1");
             c.RoutePrefix = string.Empty;
           }
         );
